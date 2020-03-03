@@ -786,8 +786,7 @@ def anharmonic_coupling(zeromode,qmode,cell_data,qp):
                                 
                 #first term in the summation
                 const = np.sqrt(hbar**3.0/(8.0*m1*m2*m3*omegazero[zeromode]*omega[qp,qmode]*omega[qp,qmode]))
-                                           
-                sys.exit()
+                
                 #determine eigenvalues for the second and third atom in each direction
                 eigx2  = eigre[qp][qmode][int(2*tyat2+0)]+1j*eigim[qp][qmode][int(2*tyat2+0)]
                 eigy2  = eigre[qp][qmode][int(2*tyat2+1)]+1j*eigim[qp][qmode][int(2*tyat2+1)]
